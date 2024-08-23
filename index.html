@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land Property</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="style.css">
+ <script>
+  tailwind.config = {
+    theme: {
+      screens: {
+      'sm': '440px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
+      
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body>
+  <div class="container  mx-auto flex justify-between pt-8 items-center border  ">
+    <div class="bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center  ">
+      <i class="fa-solid fa-arrow-right px-2 py-2 -rotate-45 "></i>
+      <p class="text-3xl ml-3 font-extrabold">Rinterio</p>
+    </div>
+    <div class="flex space-x-12 ">
+      <h4 class="hidden lg:block">Home</h4>
+      <h4 class="hidden lg:block">Service</h4>
+      <h4 class="hidden lg:block">Portfolio</h4>
+      <h4 class="hidden lg:block">Blogs</h4>
+      <h4 class="hidden lg:block">Contact Us</h4>
+    </div>
+    <div class="space-x-10 hidden lg:block ">
+      <i class="fa-solid fa-magnifying-glass text-2xl py-4 px-4  bg-[#00000015] text-white w-16 h-16 rounded-full"></i>
+      <i class="fa-solid fa-cart-shopping text-2xl  py-4 px-4  bg-[#00000015] text-white w-16 h-16 rounded-full"></i>
+      <button class=" btn bg-[#ABEF5F] text-lg rounded-full">Book Consult  <i class="fa-solid fa-arrow-right bg-[black] text-white w-8 rounded-full py-2 -rotate-45 "></i></button>
+    </div>
+    <i class="fa-solid fa-bars "></i>
+  </div>
+</body>
+</html>
