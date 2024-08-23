@@ -12,7 +12,7 @@
   tailwind.config = {
     theme: {
       screens: {
-      'sm': '440px',
+      'sm': '400px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',
@@ -38,14 +38,15 @@
 </script>
 </head>
 <body>
-  <div class="container  mx-auto flex justify-between pt-8 items-center border  ">
+ <nav>
+  <div class="container  mx-auto flex justify-between pt-8 items-center">
     <div class="bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center  ">
       <i class="fa-solid fa-arrow-right px-2 py-2 -rotate-45 "></i>
       <p class="text-3xl ml-3 font-extrabold">Rinterio</p>
     </div>
     <div class="flex space-x-12 ">
       <h4 class="hidden lg:block">Home</h4>
-      <h4 class="hidden lg:block">Service</h4>
+      <h4 class="hidden lg:block">Service</h4> 
       <h4 class="hidden lg:block">Portfolio</h4>
       <h4 class="hidden lg:block">Blogs</h4>
       <h4 class="hidden lg:block">Contact Us</h4>
@@ -55,7 +56,21 @@
       <i class="fa-solid fa-cart-shopping text-2xl  py-4 px-4  bg-[#00000015] text-white w-16 h-16 rounded-full"></i>
       <button class=" btn bg-[#ABEF5F] text-lg rounded-full">Book Consult  <i class="fa-solid fa-arrow-right bg-[black] text-white w-8 rounded-full py-2 -rotate-45 "></i></button>
     </div>
-    <i class="fa-solid fa-bars "></i>
+    <i class="fa-solid fa-bars xl:hidden"></i>
   </div>
+ </nav>
+ <section class="banner">
+  <div class="container mx-auto text-center items-center mt-12">
+  
+    <img class="m-auto" src="assets/banner.png " >
+  
+  <div>
+    <P class="text-[#212121] text-6xl font-[900] my-10 sm:text-4xl sm:my-6">A barn house of this design has a <br>striking appearance</P>
+    <p class="text-[#494949] my-10 sm:text-[11px] sm:my-6 md:text-xl" >The barn house captivates with its blend of rustic charm and modern <br>sophistication, featuring weathered wood, sleek metal accents, and large <br>windows that flood the space with natural light.</p>
+    <button class=" btn bg-[#ABEF5F] text-lg rounded-full sm:w-96">View Details  <i class="fa-solid fa-arrow-right bg-[#8ae029] text-[#212121] w-8 rounded-full py-2 -rotate-45 "></i></button>
+  </div>
+
+ </div>
+ </section>
 </body>
 </html>
